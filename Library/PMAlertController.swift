@@ -33,6 +33,12 @@ import UIKit
     
     open var gravityDismissAnimation = true
     open var dismissWithBackgroudTouch = false // enable touch background to dismiss. Off by default.
+
+    var isStatusBarHidden = true
+
+    override open var prefersStatusBarHidden: Bool {
+        return isStatusBarHidden
+    }
     
     //MARK: - Lifecycle
     
